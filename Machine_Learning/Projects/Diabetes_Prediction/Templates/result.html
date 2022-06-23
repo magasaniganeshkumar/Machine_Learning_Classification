@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+ {% block title  %} Predict {% endblock %}
+  
+
+    {% block content %} 
+<center>
+  {% if prediction == 1 %}
+        <h2 style="color: red;">Sorry to say, Chances of having Diabetes is more, Please consult a Doctor !. </h2><br><br>
+        <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-usk8v5bi3s9u9udic3rpb62uh0-20181207032026.Medi.jpeg" class="img-rounded" alt="Please check internet" width="304" height="236"> 
+  {% elif prediction == 0 %}
+          <h2 style="color: green">No worries! You don't have Diabetes. </h2><br><br>
+          <img src="https://previews.123rf.com/images/dirkercken/dirkercken1303/dirkercken130300049/18534750-no-worries-mate-everything-under-control-stop-worrying-all-is-ok-no-problems.jpg" class="img-rounded" alt="Please check internet" width="304" height="236"> 
+
+  {% endif %}       
+</center> 
+
+{% endblock %}

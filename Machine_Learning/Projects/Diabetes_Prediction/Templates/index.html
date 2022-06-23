@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+ {% block title  %} Home {% endblock %}
+
+  {% block content %} 
+
+    <form action="/predict" method="post">
+      <div class="form-group">
+      <input type="text" name="Pregnancies" placeholder="Pregnancies" required="Please enter values" />
+    </div>
+    <div class="form-group">
+      <input type="text" name="Glucose Level" placeholder="Glucose Level" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="Blood Pressure" placeholder="Blood Pressure" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="Skin Thickness" placeholder="Skin Thickness" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="Insulin" placeholder="Insulin" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="BMI" placeholder="BMI" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="Diabetes PF" placeholder="Diabetes PF" required="Please enter values" />
+    </div>
+    <div class="form-group">
+      <input type="text" name="Age" placeholder="Age" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <button type="submit" class="btn btn-success">Predict</button>
+    </div>
+
+  {% endblock %} 
