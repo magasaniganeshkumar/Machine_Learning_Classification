@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+ {% block title  %} Home {% endblock %}
+
+  {% block content %} 
+  <center>
+    <form action="/predict" method="post">
+      <div class="form-group">
+      <input type="text" name="chest pain type (4 values)" placeholder="chest pain type (valus 0, 1, 2, 3)" required="Please enter values" />
+    </div>
+    <div class="form-group">
+      <input type="text" name="requesting blood pressure" placeholder="requesting blood pressure" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="serum cholestoral in mg/dl" placeholder="serum cholestoral in mg/dl" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="fasting blood suger > 120 mg/dl" placeholder="fasting blood suger > 120 mg/dl" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="resting electocardiographic results (values 0, 1, 2)" placeholder="resting electocardiographic results (values 0, 1, 2)" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="maximum heart rate achieved" placeholder="maximum heart rate achieved" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <input type="text" name="exercise induced angina" placeholder="exercise induced angina" required="Please enter values" />
+    </div>
+      <div class="form-group">
+      <button type="submit" class="btn btn-success">Predict</button>
+    </div>
+  </center>
+  {% endblock %} 
